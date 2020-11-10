@@ -1,0 +1,166 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <link rel="icon" 
+         type="image/png" 
+         href="logo.png">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Our Form - HomeDecor</title><head>
+<SCRIPT LANGUAGE="JavaScript">
+  function returnToPreviousPage() {
+    window.history.back();
+}
+function verify(){
+  var nom= document.getElementById("name");
+  var pass  = document.getElementById("password");
+  var email = document.getElementById("email");
+  var cc= document.getElementById("cc");
+  var pnom= document.getElementById("prenom");
+  var age= document.getElementById("Age");
+  if (nom.value.length == 0 || pass.value.length == 0 || pnom.value.length == 0 || email.value.length == 0 || cc.value.length == 0 || age.value.length == 0) {
+    alert("validation failed false");
+     returnToPreviousPage();
+    return false;
+  }
+  else {
+    alert("validation passed");
+    return true ;
+  }
+}
+
+function validateEmail(email){
+        var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+
+        if (reg.test(email.value) == false) 
+        {
+            alert("Invalid Email Address");
+            return false;
+        }
+
+        return true;}
+
+function passwordValidation() {
+  var pass  = document.getElementById("password");
+  if (pass.value.length < 4 && pass.value.length>0){
+     alert("Password too short");
+     return false;
+  }
+  if (pass.value.length == 0){
+     alert("Password can't be empty");
+     return false;}
+  else return true;
+}
+function nameValidation (){
+  var nom= document.getElementById("name");
+  if (nom.value.length == 0) {
+    alert("First ame can't be empty ");
+  }
+}
+function ccvalidate (){
+  var cc= document.getElementById("cc");
+  if (cc.value.length == 0) {
+    alert("Please Tell us Your Credit Number !! We won't hack you don't worry 3:)");
+  }}
+  function choicevalidate (){
+  var cc= document.getElementById("cc");
+  if (cc.value.length == 0) {
+    alert("Please Why ???? WHHYYYYYYYY");
+  }}
+function lastNameValidation (){
+  var nom= document.getElementById("prenom");
+  if (nom.value.length == 0) {
+    alert("Last name can't be empty ");
+  }}
+  function ageValidation (){
+  var age= document.getElementById("Age");
+  if (age.value < 18) {
+    alert("You must be 18yo or older");
+    
+  }
+}
+</SCRIPT>
+</head>
+<style type="text/css">
+  #body{ background-image: url("geometric-colorful-wallpaper.jpg");
+  background-size: cover; }
+
+</style>
+
+<body id ="body" background= >
+
+  <style type="text/css"> 
+    
+  
+#tab{
+  z-index: 500px;
+   position: relative;
+   left: 100px;
+   top: 50px;
+   text-decoration:none;
+}
+#logo{position: relative;
+right: 80px;
+top: 60px;}
+</style>
+ <div class="scroll">
+  <div>
+  
+  
+   <img id="logo" src="logo.png" align="right" width="280" height="100">
+
+    <form id="form" name="form" method="post" action="home.html" onsubmit="return verify()">
+  <table id ="tab" width="700"  align="left" cellspacing="1" style="color:white" border="0" >
+    
+    <tr>
+      <td colspan="2" ><h1><font   style="font-family:arial">Inscritption Form </font></h1> <br></td>
+    </tr>
+    <tr>
+      <td width="284"><em>First Name</em> </td>
+      <td width="438"><label>
+        <input type="text" name="name" id="name"  onblur="nameValidation();"/>
+      </label></td>
+    </tr>
+    <tr>
+      <td><u><em>Last Name </em></u></td>
+      <td><input type="text" name="prenom" id="prenom" onblur="lastNameValidation();" /></td>
+    </tr>
+    <tr>
+      <td><u><em>Age</em></u></td>
+      <td> <input type="text" name="Age" id="Age" onblur="ageValidation();" />
+      </td>
+    </tr>
+    
+    <tr><td>Credit Card</td><td><input type="text" name="cc" id="cc" onblur="ccvalidate();" /></td></tr>
+    <tr>
+      <td><em>Why did you chose our website ?</em></td>
+      <td><textarea name="choice" id="choice" cols="45" rows="5" onblur="choicevalidate();" ></textarea></td>
+    </tr> 
+    <tr>
+      <td><em>Email</em></td>
+      <td><input type="text" name="email" id="email" onblur="validateEmail(this);"  /></td>
+    </tr>
+    <tr>
+      <td><em>Password</em></td>
+      <td><input id="password" type="text" name="password" onblur="passwordValidation();" />
+      </td>
+    </tr>
+    <tr><td><hr></td><td><hr></td></tr>
+    <tr>
+      
+      <td colspan="2" align="left"><input type="reset" name="button" id="button" value="Reset" />
+      <input type="submit" name="button2" id="button2" value="Submit" />
+      </td>
+    </tr></form>
+    <!-- <tr><td><div class="top-nav s-12 l-10">
+            <p class="nav-text"></p>
+            <ul class="right chevron">
+              <li><a href="form.html">reset</a></li>
+              <li><a href="home.html" onblur="verify();">submit</a></li>
+            
+            </ul>
+          </div></td></tr> -->
+  </table>
+
+
+
+</body>
+</html>

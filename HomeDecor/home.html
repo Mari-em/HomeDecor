@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prospera Free - New Amazing HTML5 Template</title>
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/responsee.css">
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+    <!-- CUSTOM STYLE -->
+    <link rel="stylesheet" href="css/template-style.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>    
+    <script type="text/javascript" src="js/validation.js"></script> 
+    <script type="text/javascript">
+    	function returnToPreviousPage() {
+    window.history.back();
+}
+    	function verify(){
+  
+  var pass  = document.getElementById("password");
+  var email = document.getElementById("email");
+  
+  if ( pass.value.length == 0 || email.value.length == 0 ) {
+    alert("validation failed false");
+     returnToPreviousPage();
+    return false;
+  }
+  else {
+    alert("validation passed");
+    return true ;
+  }
+}
+    	function validateEmail(email){
+        var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+
+        if (reg.test(email.value) == false) 
+        {
+            alert("Invalid Email Address");
+            return false;
+        }
+
+        return true;}
+
+function passwordValidation() {
+  var pass  = document.getElementById("password");
+  if (pass.value.length < 4 && pass.value.length>0){
+     alert("Password too short");
+     return false;
+  }
+  if (pass.value.length == 0){
+     alert("Password can't be empty");
+     return false;}
+  else return true;
+}
+    </script>
+  </head> 
+  
+  <body class="size-1140">
+  	<style type="text/css">
+  		/* Container holding the image and the text */
+
+
+
+
+.container{
+  position: relative;
+  top: 50px;
+}
+/* Bottom right text */
+.text-block {
+  position: absolute;
+  top: 150px;
+  right: 450px;
+ padding-left: 20px;
+  padding-right: 20px;
+}#hr{
+        background-image: url("geometric-colorful-wallpaper.jpg");
+        background-size:1200px;
+        width: 1200px;
+        height: 5px;
+      }
+      #bg{
+        background-image: url("geometric-colorful-wallpaper.jpg");
+        background-size:1200px;
+        width: 1200px;
+        height: 200px;
+
+      }
+      #g{
+        left: 520px;
+        top: 60px;
+        position: relative;
+
+      }
+      #image{
+        width: 500px;
+        height: 300px;
+      }
+      #bar1 {
+  background-color:#002633;
+ }
+ #gris{
+  background-color: #CAD8DB;
+ }
+ #log{
+ 	position: relative;
+ 	background-image: url("geometric-colorful-wallpaper.jpg");
+ 	background-size: 400px; 
+ 	left: 740px;
+ 	bottom: 120px;
+ 	size: 1000px;}
+ 	#butt{
+ 		position: relative;
+ 		left: 50px;
+ 		width: 300px;
+ 		bottom: 5px;
+ 	}
+#color{
+	color: black;
+}
+#butt2{
+	position: relative;
+	right: 60px;
+	bottom: 42px;
+}
+  	</style>
+  	<!-- PREMIUM FEATURES BUTTON -->
+
+  	<header role="banner" >    
+     <!-- Top Bar -->
+      <div  id="gris">
+        <div class="line" id="bar1">
+          <div class="s-12 m-6 l-6">
+            
+          </div>
+          <!-- icons -->
+          <div class="s-12 m-6 l-6" >
+            <div class="right" >
+              <ul class="top-bar-social right" >
+                <li><a href=""><i class="icon-facebook_circle text-orange-hover" style="color: white"></i></a></li>
+                <li><a href=""><i class="icon-twitter_circle text-orange-hover" style="color: white"></i></a></li>
+                <li><a href=""><i class="icon-instagram_circle text-orange-hover" style="color: white"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <table id="hr" ></table>
+      <!-- Top Navigation -->
+
+      <nav id="gris">
+        <div class="line">
+          <div class="s-12 l-2">
+            <a href="home.html" class="logo"><img src="logo.png" alt=""></a>
+          </div>
+          <div class="top-nav s-12 l-10">
+            <p class="nav-text"></p>
+            <ul class="right chevron">
+              <li ><a href="home.html" >Home</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="about.html">About</a></li>
+              
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="panier.html">Cart</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- MAIN -->
+   
+    <!-- MAIN -->
+    <main role="main">
+      <!-- Content -->
+      <article>
+
+        <header id="bg" >
+        	<div class="container">
+             
+            <img src="03-decorating-tips-sell-home.jpg" align="center" width="600" height="300" alt="norway" >
+            <table id="hr"></table> 
+           
+            </div>
+        </header>
+
+             
+             		<div class="s-12 m-12 l-4" id="log">
+             			<br>
+              <h4 class="text-uppercase text-strong" align="center">Login</h4>
+              <form class="text-uppercase text-strong" action="gallery.html" onsubmit="return verify()" id="form" name="form" method="post">
+                <div class="line">
+                  <div class="margin">
+                    <div class="s-12 m-12 l-6">
+                      <em id="color">Email</em>
+                      <input type="text" name="email" id="email" onblur="validateEmail(this);"  />
+                    </div>
+                    <div class="s-12 m-12 l-6">
+                      <em id="color">Password</em>
+                      <input id="password" type="text" name="password" onblur="passwordValidation();" />
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <div class="s-12" id="butt"><button  class="submit-form button background-primary border-radius text-white"  class="submit-form button background-primary border-radius text-white" type="submit">logIn</button></div> 
+
+           <div  id="butt2">
+            <p class="nav-text"></p>
+            <ul class="right chevron">
+              <li > <button class="submit-form button background-primary border-radius text-white" ><a href="form.html" >SignUp</a> </button></li>
+          </ul></div>
+              </form>
+              <br>
+            </div>
+             	<br>
+        <div id="gris"> 
+
+          <div class="line">
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            
+
+            <div class="margin text-center">
+
+              <div class="s-12 m-12 l-4 margin-bottom">
+                <div class="padding-2x block-bordered border-radius">
+                  <img src="bedroom.jpg">
+
+                  <h2 class="text-thin" style="color: #590A0A">Bedroom</h2>
+                  <p class="margin-bottom-30">HomeDecor offers a unique design and outlook of the modern bedroom. Aiming for gentle yet elegant, this white lacquered finish set will enhance the look of bedrooms of different sizes and colors. Whether choosing the entire set, its individual platform bed, or any of the case goods, you can rest assured that this quality furniture is meant to last.</p>
+                  <a class="button border-radius background-primary text-size-12 text-white text-strong" href="">SEE MORE </a>
+                </div>
+              </div>
+              <div class="s-12 m-12 l-4 margin-bottom">
+                <div class="padding-2x block-bordered border-radius">
+                  <img src="diningroom.jpg">
+
+                  <h2 class="text-thin" style="color: #590A0A">Diningroom</h2>
+                  <p class="margin-bottom-30">Unique Features:
+Solid mango wood and veneers are enhanced by stippled details for a well-loved, inviting look.
+A self-storing butterfly leaf provides easy access when you need to lengthen your table.
+</p>
+                  <a class="button border-radius background-primary text-size-12 text-white text-strong" href="">SEE MORE </a>
+                </div>
+              </div>
+              <div class="s-12 m-12 l-4 margin-bottom">
+                <div class="padding-2x block-bordered border-radius">
+                  <img src="kitchen.jpg">
+
+                  <h2 class="text-thin" style="color: #590A0A">Kintchen</h2>
+                  <p class="margin-bottom-30">The gourmet kitchen is dressed to impress with charcoal gray cabinets, honey-colored wood floors, clean white countertops and a subway tile backsplash. The contrast of the dark and light brings stylish drama to this trend-setting space.</p>
+                  <a class="button border-radius background-primary text-size-12 text-white text-strong" href="">SEE MORE </a>
+                </div>
+              </div>
+              <div class="s-12 m-12 l-4 margin-bottom">
+                <div class="padding-2x block-bordered border-radius">
+                  <img src="livingroom.jpg">
+
+                  <h2 class="text-thin" style="color: #590A0A">Livingroom</h2>
+                  <p class="margin-bottom-30">This Brockway 4 Piece Living Room Set comes with chic style, classic fabrics, and undeniable style. This set will make your home the most elegant in the neighborhood. A round cocktail ottoman and accent chair in fabrics that complement the sofa.</p>
+                  <a class="button border-radius background-primary text-size-12 text-white text-strong" href="">SEE MORE </a>
+                </div>
+              </div>
+              <div class="s-12 m-12 l-4 margin-bottom">
+                <div class="padding-2x block-bordered border-radius">
+                 <img src="garden.jpg">
+
+                  <h2 class="text-thin" style="color: #590A0A">Garder</h2>
+                  <p class="margin-bottom-30">Colorful Peace Poles Design Ideas For Garden</p>
+                  <a class="button border-radius background-primary text-size-12 text-white text-strong" href="">SEE MORE </a>
+                </div>
+              </div>
+              <div class="s-12 m-12 l-4">
+                <div class="padding-2x block-bordered border-radius">
+                  <img src="bathroom.jpg">
+
+                  <h2 class="text-thin" style="color: #590A0A">Bathroom</h2>
+                  <p class="margin-bottom-30">The seriously stylish modern Pro 600 bathroom suite, features contemporary elegant styling with a smooth cool white finish.The close coupled toilet only projects from the wall by 600mm. Supplied with a wrap over soft close seat which stops the lid from slamming and a dual flush with polished chrome flush button. The quality 560mm wide 1 tap hole basin has a overflow and comes with a full pedestal.</p>
+                  <a class="button border-radius background-primary text-size-12 text-white text-strong" href="">SEE MORE </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div> 
+      </article>
+    </main>
+    
+    <!--FOOTER -->
+    <footer>
+      <!-- Main Footer -->
+      <section class="section background-dark">
+        <div class="line">
+          <div class="margin">
+            <!-- Collumn 1 -->
+            <div class="s-12 m-12 l-4 margin-m-bottom-2x">
+              <h4 class="text-uppercase text-strong">Our Philosophy</h4>
+              <p class="text-size-20"><em>"“A room should never allow the eye to settle in one place. It should smile at you and create fantasy,” – Juan Montoya.</em><p>
+                            
+              <div class="line">
+                <h4 class="text-uppercase text-strong margin-top-30">About Our Company</h4>
+                <div class="margin">
+                  <div class="s-12 m-12 l-4 margin-m-bottom">
+                    <a class="image-hover-zoom" href=""><img src="img/blog-04.jpg" alt=""></a>
+                  </div>
+                  <div class="s-12 m-12 l-8 margin-m-bottom">
+                    <p>We're here to make your house better.</p>
+                    <a class="text-more-info text-primary-hover" href="">Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Collumn 2 -->
+            <div class="s-12 m-12 l-4 margin-m-bottom-2x">
+              <h4 class="text-uppercase text-strong">Contact Us</h4>
+              <div class="line">
+                <div class="s-1 m-1 l-1 text-center">
+                  <i class="icon-placepin text-primary text-size-12"></i>
+                </div>
+                <div class="s-11 m-11 l-11 margin-bottom-10">
+                  <p><b>Adress:</b> Bardo,Tunis</p>
+                </div>
+              </div>
+              <div class="line">
+                <div class="s-1 m-1 l-1 text-center">
+                  <i class="icon-mail text-primary text-size-12"></i>
+                </div>
+                <div class="s-11 m-11 l-11 margin-bottom-10">
+                  <p><a href="" class="text-primary-hover"><b>E-mail:</b> contact@sampledomain.com</a></p>
+                </div>
+              </div>
+              <div class="line">
+                <div class="s-1 m-1 l-1 text-center">
+                  <i class="icon-smartphone text-primary text-size-12"></i>
+                </div>
+                <div class="s-11 m-11 l-11 margin-bottom-10">
+                  <p><b>Phone:</b> xx xxx xxx</p>
+                </div>
+              </div>
+              <div class="line">
+                <div class="s-1 m-1 l-1 text-center">
+                  <i class="icon-twitter text-primary text-size-12"></i>
+                </div>
+                <div class="s-11 m-11 l-11 margin-bottom-10">
+                  <p><a href="" class="text-primary-hover"><b>Twitter</b></a></p>
+                </div>
+              </div>
+              <div class="line">
+                <div class="s-1 m-1 l-1 text-center">
+                  <i class="icon-facebook text-primary text-size-12"></i>
+                </div>
+                <div class="s-11 m-11 l-11">
+                  <p><a href="" class="text-primary-hover"><b>Facebook</b></a></p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Collumn 3 -->
+            <div class="s-12 m-12 l-4">
+              <h4 class="text-uppercase text-strong">Leave a Message</h4>
+              <form class="customform text-white">
+                <div class="line">
+                  <div class="margin">
+                    <div class="s-12 m-12 l-6">
+                      <input name="email" class="required email border-radius" placeholder="Your e-mail" title="Your e-mail" type="text" />
+                    </div>
+                    <div class="s-12 m-12 l-6">
+                      <input name="name" class="name border-radius" placeholder="Your name" title="Your name" type="text" />
+                    </div>
+                  </div>
+                </div>
+                <div class="s-12">
+                  <textarea name="message" class="required message border-radius" placeholder="Your message" rows="3"></textarea>
+                </div>
+                <div class="s-12"><button class="submit-form button background-primary border-radius text-white" type="submit">Submit Button</button></div> 
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr class="break margin-top-bottom-0" style="border-color: rgba(0, 38, 51, 0.80);">
+      
+      <!-- Bottom Footer -->
+      <section class="padding background-dark">
+        <div class="line">
+          
+      </section>
+    </footer>
+    <script type="text/javascript" src="js/responsee.js"></script>
+    <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
+    <script type="text/javascript" src="js/template-scripts.js"></script>
+     
+   </body>
+</html>
